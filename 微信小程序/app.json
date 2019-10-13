@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/tools/tools",
+    "pages/users/user",
+    "pages/pages01/page01",
+    "pages/seach/seach",
+    "pages/page02/page02",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "留学数学",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#A349A4",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/pages01/page01",
+        "iconPath": "imgs/course.png",
+        "selectedIconPath": "imgs/course1.png",
+        "text": "课程"
+      },
+      {
+        "pagePath": "pages/page02/page02",
+        "iconPath": "imgs/community.png",
+        "selectedIconPath": "imgs/community1.png",
+        "text": "社区"
+      },
+      {
+        "pagePath": "pages/tools/tools",
+        "iconPath": "imgs/tool.png",
+        "selectedIconPath": "imgs/tool1.png",
+        "text": "工具箱"
+      },
+      {
+        "pagePath": "pages/users/user",
+        "iconPath": "imgs/mine.png",
+        "selectedIconPath": "imgs/mine1.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

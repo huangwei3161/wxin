@@ -1,0 +1,21 @@
+.seach{
+  width: 550rpx;
+  height: 70rpx;
+  border: 1rpx solid #C5CBCE;
+  border-radius: 10rpx;
+  margin:0 20rpx;
+  line-height: 70rpx;
+  
+}
+.body{
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: row;
+
+}
+.button{
+  width: 200rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+
+}

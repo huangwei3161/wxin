@@ -1,0 +1,61 @@
+<view class="body">
+  <view class="container">
+    <view class="head">
+      <scroll-view  scroll-x="true" class="scroll">
+        <view class="block">
+          <view class="detailed">
+            <view class="img">
+              <image src="../../imgs/toolswx.png"></image>
+            </view>
+            <view class="title">企业微信</view>
+          </view>
+        </view>
+        <view class="block">
+          <view class="detailed">
+            <view class="img">
+              <image src="../../imgs/toolsxcx.png"></image>
+            </view>
+            <view class="title">小程序</view>
+          </view>
+        </view>
+        <view class="block">
+          <view class="detailed">
+            <view class="img">
+              <image src="../../imgs/toolswxzf.png"></image>
+            </view>
+            <view class="title">微信支付</view>
+          </view>
+        </view>
+        <view class="block">
+          <view class="detailed">
+            <view class="img">
+              <image src="../../imgs/toolsxyx.png"></image>
+            </view>
+            <view class="title">小游戏</view>
+          </view>
+        </view>
+      </scroll-view> 
+    </view>
+    <view class="case">
+      <view class="lastcase">最新案例</view> 
+      <view class="text">
+        <view class="logo">
+          <image src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2446911407,2955503887&fm=26&gp=0.jpg"></image>
+        </view>
+        <view class="word">“码”上精准营销，蒙牛用数字化读懂消费者</view>
+      </view>
+      <view class="text">
+        <view class="logo">
+          <image src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2910890782,996625392&fm=26&gp=0.jpg"></image>
+        </view>
+        <view class="word">当5G来临...</view>
+      </view>
+      <view class="text">
+        <view class="logo">
+          <image src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2767869138,4032271361&fm=26&gp=0.jpg"></image>
+        </view>
+        <view class="word">当AI时代来临，人民日报“触电”人工智能</view>
+      </view>
+    </view>
+  </view>
+</view>

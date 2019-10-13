@@ -1,0 +1,195 @@
+<view class="header">
+  <view class="searh" bindtap="seach" open-type="navigateTo">
+    搜索......
+  </view>
+  <swiper class="img" indicator-dots='true' autoplay='true' duration='{{500}}' interval='{{2000}}'>
+
+    <view wx:for='{{imgUrls}}' wx:key="index"  wx:for-item="imgUrl" >
+
+      <swiper-item>
+        <image  src='{{imgUrl.url}}'></image>
+      </swiper-item>
+    </view>
+
+  </swiper>
+</view>
+<view class="button">
+  <view class='headerItem' wx:for="{{topics}}" wx:key="index" wx:for-item="topic">
+    <view class='headerItemView' bindtap='clickTopItem' data-id="{{index}}">
+      <view class='{{indexSelect==index?"titleSelect":"title"}}'>{{topic.title}}</view>
+      <view class='line' wx:if="{{indexSelect==index}}"></view>
+    </view>
+  </view>
+</view>
+<view class="content">
+  <view>
+
+    <swiper current="{{indexSelect}}" class='swiper' style="height:1900rpx;" duration="300" bindchange="bindchange">
+      <swiper-item>
+        <view class='swiper_con'>
+          <view class="Topic"></view>
+          <view class="user">
+            <view class="Head portrait">
+
+            </view>
+          </view>
+
+          <view class="Title">
+            <view class="titlenav1">
+              <image src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=60977623,3173186263&fm=26&gp=0.jpg" style="height: 80rpx;width: 80rpx; border-radius:40rpx"></image>
+              <view>社区小助手</view>
+              <image src="../../imgs/govern.png" class="Icon1"></image>
+            </view>
+            <view class="navtitle1row">
+              <view class="hottitle">[顶]</view>
+              <view>【话题讨论】出门最怕等？小程序蓝牙能力为你“加速”</view>
+            </view>
+          </view>
+          <view class="navtitle2row">
+            <text> 这是第二期《小程序说·能力百科全书》，上一期我们讨论了蓝牙能力在多个场景的应用，这次我们想看看</text>
+            <view class="navtitle3row">
+              <image src="http://img1.imgtn.bdimg.com/it/u=2930655861,1003336024&fm=26&gp=0.jpg" style="height:200rpx; width:240rpx"></image>
+              <image src="http://img5.imgtn.bdimg.com/it/u=4040326880,1463631805&fm=26&gp=0.jpg" style="height:200rpx; width:240rpx"></image>
+              <image src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3749386388,3551331357&fm=26&gp=0.jpg" style="height:200rpx; width:240rpx"></image>
+            </view>
+            <view class="taglow">
+              <view>8-24更新</view>
+              <view class="taglow1">4评论</view>
+              <view class="taglow2">986浏览</view>
+            </view>
+          </view>
+          <view class="Topic"></view>
+          <view class="user">
+
+          </view>
+
+          <view class="Title">
+            <view class="titlenav1">
+              <image src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=60977623,3173186263&fm=26&gp=0.jpg" style="height: 80rpx;width: 80rpx; border-radius:40rpx"></image>
+              <view>社区小助手</view>
+              <image src="../../imgs/govern.png" class="Icon1"></image>
+            </view>
+            <view class="navtitle1row">
+              <view class="hottitle">[顶]</view>
+              <view>【话题讨论】出门最怕等？小程序蓝牙能力为你“加速”</view>
+            </view>
+          </view>
+          <view class="navtitle2row">
+            <text> 这是第二期《小程序说·能力百科全书》，上一期我们讨论了蓝牙能力在多个场景的应用，这次我们想看看</text>
+            <view class="navtitle3row">
+              <image src="http://img1.imgtn.bdimg.com/it/u=2930655861,1003336024&fm=26&gp=0.jpg" style="height:200rpx; width:240rpx"></image>
+              <image src="http://img5.imgtn.bdimg.com/it/u=4040326880,1463631805&fm=26&gp=0.jpg" style="height:200rpx; width:240rpx"></image>
+              <image src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3749386388,3551331357&fm=26&gp=0.jpg" style="height:200rpx; width:240rpx"></image>
+            </view>
+            <view class="taglow">
+              <view>8-24更新</view>
+              <view class="taglow1">4评论</view>
+              <view class="taglow2">986浏览</view>
+            </view>
+          </view>
+
+          <view class="Topic"></view>
+          <view class="user">
+
+          </view>
+
+          <view class="Title">
+            <view class="titlenav1">
+              <image src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=60977623,3173186263&fm=26&gp=0.jpg" style="height: 80rpx;width: 80rpx; border-radius:40rpx"></image>
+              <view>社区小助手</view>
+              <image src="../../imgs/govern.png" class="Icon1"></image>
+            </view>
+            <view class="navtitle1row">
+              <view class="hottitle">[顶]</view>
+              <view>【话题讨论】出门最怕等？小程序蓝牙能力为你“加速”</view>
+            </view>
+          </view>
+          <view class="navtitle2row">
+            <text> 这是第二期《小程序说·能力百科全书》，上一期我们讨论了蓝牙能力在多个场景的应用，这次我们想看看</text>
+            <view class="navtitle3row">
+              <image src="http://img1.imgtn.bdimg.com/it/u=2930655861,1003336024&fm=26&gp=0.jpg" style="height:200rpx; width:240rpx"></image>
+              <image src="http://img5.imgtn.bdimg.com/it/u=4040326880,1463631805&fm=26&gp=0.jpg" style="height:200rpx; width:240rpx"></image>
+              <image src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3749386388,3551331357&fm=26&gp=0.jpg" style="height:200rpx; width:240rpx"></image>
+            </view>
+            <view class="taglow">
+              <view>8-24更新</view>
+              <view class="taglow1">4评论</view>
+              <view class="taglow2">986浏览</view>
+            </view>
+          </view>
+        </view>
+
+      </swiper-item>
+
+
+
+      <swiper-item>
+        <view class='swiper_con'>
+          <view class="Topic"></view>
+          <view class="user">
+
+          </view>
+
+          <view class="Title">
+            <view class="titlenav1">
+              <image src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=60977623,3173186263&fm=26&gp=0.jpg" style="height: 80rpx;width: 80rpx; border-radius:40rpx"></image>
+              <view>社区小助手</view>
+              <image src="../../imgs/govern.png" class="Icon1"></image>
+            </view>
+            <view class="navtitle1row">
+              <view class="hottitle">[顶]</view>
+              <view>【话题讨论】出门最怕等？小程序蓝牙能力为你“加速”</view>
+            </view>
+          </view>
+          <view class="navtitle2row">
+            <text> 这是第二期《小程序说·能力百科全书》，上一期我们讨论了蓝牙能力在多个场景的应用，这次我们想看看</text>
+            <view class="navtitle3row">
+              <image src="http://img1.imgtn.bdimg.com/it/u=2930655861,1003336024&fm=26&gp=0.jpg" style="height:200rpx; width:240rpx"></image>
+              <image src="http://img5.imgtn.bdimg.com/it/u=4040326880,1463631805&fm=26&gp=0.jpg" style="height:200rpx; width:240rpx"></image>
+              <image src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3749386388,3551331357&fm=26&gp=0.jpg" style="height:200rpx; width:240rpx"></image>
+            </view>
+            <view class="taglow">
+              <view>8-24更新</view>
+              <view class="taglow1">4评论</view>
+              <view class="taglow2">986浏览</view>
+            </view>
+          </view>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <view class='swiper_con'>
+          <view class="Topic"></view>
+          <view class="user">
+
+          </view>
+
+          <view class="Title">
+            <view class="titlenav1">
+              <image src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=60977623,3173186263&fm=26&gp=0.jpg" style="height: 80rpx;width: 80rpx; border-radius:40rpx"></image>
+              <view>社区小助手</view>
+              <image src="../../imgs/govern.png" class="Icon1"></image>
+            </view>
+            <view class="navtitle1row">
+              <view class="hottitle">[顶]</view>
+              <view>【话题讨论】出门最怕等？小程序蓝牙能力为你“加速”</view>
+            </view>
+          </view>
+          <view class="navtitle2row">
+            <text> 这是第二期《小程序说·能力百科全书》，上一期我们讨论了蓝牙能力在多个场景的应用，这次我们想看看</text>
+            <view class="navtitle3row">
+              <image src="http://img1.imgtn.bdimg.com/it/u=2930655861,1003336024&fm=26&gp=0.jpg" style="height:200rpx; width:240rpx"></image>
+              <image src="http://img5.imgtn.bdimg.com/it/u=4040326880,1463631805&fm=26&gp=0.jpg" style="height:200rpx; width:240rpx"></image>
+              <image src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3749386388,3551331357&fm=26&gp=0.jpg" style="height:200rpx; width:240rpx"></image>
+            </view>
+            <view class="taglow">
+              <view>8-24更新</view>
+              <view class="taglow1">4评论</view>
+              <view class="taglow2">986浏览</view>
+            </view>
+          </view>
+        </view>
+      </swiper-item>
+    </swiper>
+
+  </view>
+</view>

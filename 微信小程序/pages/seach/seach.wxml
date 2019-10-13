@@ -1,0 +1,7 @@
+<view class="body" bindtap="keyboard">
+  <input class="seach"type="text"  value="" />
+    
+  
+   <Button class="button"bindtap="seach" >搜索</Button>    
+</view>
+          
